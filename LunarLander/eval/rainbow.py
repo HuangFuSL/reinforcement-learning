@@ -17,7 +17,7 @@ os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 @auto_cli
 @dataclasses.dataclass
 class EvalConfig:
-    checkpoint: str = 'lunarlander_rainbow.pt'
+    checkpoint: str = 'checkpoints/lunarlander_rainbow.pt'
     episodes: int = 10
     max_steps: int = 1000
     demo: bool = False
