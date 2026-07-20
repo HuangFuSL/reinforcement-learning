@@ -225,6 +225,8 @@ async def main(
             log['epoch'] = epoch
 
             # --- Checkpoint ---
+            if not os.path.exists('checkpoints'):
+                os.makedirs('checkpoints')
             torch.save(model.state_dict(),f'checkpoints/lunarlander_rainbow_{epoch}.pt')
 
             # --- Demo ---
@@ -241,7 +243,7 @@ async def main(
     demo_env = make_demo_env()
     run_episode(demo_env, model, 1000, eps=0.0)
     model.to('cpu')
-    torch.save(model.state_dict(), 'lunarlander_rainbow.pt')
+    torch.save(model.state_dict(), 'checkpoints/lunarlander_rainbow.pt')
 
 
 if __name__ == '__main__':
