@@ -1,0 +1,5 @@
+torch
+gymnasium[box2d]
+tqdm
+numpy
+wandb
