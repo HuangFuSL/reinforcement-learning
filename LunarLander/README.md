@@ -22,3 +22,7 @@ This directory contains the implementation of RL models under [LunarLander-v3](h
 - Max episode length: 1000 timesteps
 
 An episode is considered a solution if it scores at least 200 points.
+
+## Models
+
+- Rainbow DQN: [rainbow.py](models/rainbow.py) [statistics](https://wandb.ai/huangfusl/Reinforcement-Learning/runs/4iunar9l)
