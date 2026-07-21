@@ -26,3 +26,4 @@ An episode is considered a solution if it scores at least 200 points.
 ## Models
 
 - Rainbow DQN: [rainbow.py](models/rainbow.py) [statistics](https://wandb.ai/huangfusl/Reinforcement-Learning/runs/4iunar9l)
+- PPO: [ppo.py](models/ppo.py) [statistics](https://wandb.ai/huangfusl/Reinforcement-Learning/runs/l9cd5qrm)
